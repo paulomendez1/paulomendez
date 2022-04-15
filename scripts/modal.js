@@ -42,6 +42,13 @@ $(document).ready(function() {
       detail:
         'Full E-Commerce system with Log-In and Session Management',
       link: 'https://github.com/paulomendez1/SistemadeVentasOnline'
+    },
+    agenda: {
+      title: 'ProAgenda',
+      tag: '',
+      detail:
+        'Simple Mobile Application to schedule medical appointments',
+      link: 'https://github.com/paulomendez1/proagenda'
     }
   };
 
