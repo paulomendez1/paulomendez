@@ -49,6 +49,12 @@ $(document).ready(function() {
       detail:
         'Simple Mobile Application to schedule medical appointments',
       link: 'https://github.com/paulomendez1/proagenda'
+    },
+    netflix: {
+      title: 'Netflix Clone Page',
+      detail:
+        'Plain HTML, CSS & JS Netflix clone page',
+      link: 'https://github.com/paulomendez1/NetflixClonePage'
     }
   };
 

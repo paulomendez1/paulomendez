@@ -716,42 +716,28 @@ section:nth-of-type(3) #gallery .mix .button:hover {
   background: #e31b6d;
   color: #fff;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
+section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
   background: url("../img/project-1.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
+section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
   background: url("../img/project-2.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-  background: url("../img/project-3.jpg") center center/cover;
+section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
+  background: url("../img/project-3.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-  background: url("../img/project-4.png") center center/cover;
+  background: url("../img/project-4.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
+section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
   background: url("../img/project-5.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
+section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
   background: url("../img/project-6.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
+section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
   background: url("../img/project-7.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-  background: url("../img/project-8.jpg") center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-  background: url("../img/project-9.jpg") center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-  background: url("../img/project-10.jpg") center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-  background: url("../img/project-11.jpg") center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
-  background: url("../img/project-12.jpg") center center/cover;
-}
+
 section:nth-of-type(3) #gallery .mix .card {
   height: 240px;
   max-width: 100%;
@@ -788,7 +774,6 @@ section:nth-of-type(4) .gradient {
   top: 0;
   width: 100%;
 }
-
 
 section:nth-of-type(4) .label {
   font-size: 12pt;
@@ -841,8 +826,8 @@ section:nth-of-type(5) form {
   margin: 40px auto 0 auto;
   min-width: 95%;
 }
-section:nth-of-type(5) input[type=text],
-section:nth-of-type(5) input[type=email],
+section:nth-of-type(5) input[type="text"],
+section:nth-of-type(5) input[type="email"],
 section:nth-of-type(5) textarea {
   background: #1e242c;
   border: 0;
@@ -995,12 +980,12 @@ footer .footnote .highlight {
   }
 
   .slide,
-.carousel-wrap {
+  .carousel-wrap {
     height: 450px;
   }
 
   .mdi-chevron-left,
-.mdi-chevron-right {
+  .mdi-chevron-right {
     font-size: 25pt !important;
   }
 
@@ -1250,10 +1235,8 @@ footer .footnote .highlight {
     margin: 0 25px;
     padding: 0 40px;
   }
-
 }
 @media screen and (min-width: 1280px) {
-
 }
 
 /*# sourceMappingURL=style.css.map */
