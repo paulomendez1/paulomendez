@@ -55,6 +55,12 @@ $(document).ready(function() {
       detail:
         'Plain HTML, CSS & JS Netflix clone page',
       link: 'https://github.com/paulomendez1/NetflixClonePage'
+    },
+    ticket: {
+      title: 'Ticket Management',
+      detail:
+        'Ticket Management App',
+      link: 'https://github.com/paulomendez1/PauliTicket'
     }
   };
 

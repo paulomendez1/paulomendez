@@ -1,271 +1,245 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="fonts/mdi/css/materialdesignicons.min.css"
-      media="all"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    <script src="scripts/pt.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/modal.js"></script>
-  </head>
-  <body>
-    <div class="overflow-wrap">
-      <div class="modal-wrap flex">
-        <div class="mask"></div>
-        <div class="modal" id="modal">
-          <div class="carousel-wrap">
-            <div class="window">
-              <div id="carousel">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+    rel="stylesheet" type="text/css" />
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="scripts/pt.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/modal.js"></script>
+</head>
+
+<body>
+  <div class="overflow-wrap">
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal">
+        <div class="carousel-wrap">
+          <div class="window">
+            <div id="carousel">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <i class="mdi mdi-chevron-left" id="prev"></i>
+            <i class="mdi mdi-chevron-right" id="next"></i>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+            <div class="button">
+              <i class="mdi mdi-open-in-new"></i>VIEW SITE
+            </div>
+          </a>
+        </div>
+        <i class="close mdi mdi-close"></i>
+      </div>
+    </div>
+
+    <section id="home" class="flex height-fix">
+      <div id="pt" class="canvas"></div>
+      <div class="flex">
+        <div class="text">
+          Hello, I'm <span class="highlight">Paulo Mendez</span>.
+          <br />
+          I'm a full-stack web developer.
+        </div>
+
+        <div class="button page-link" dest="about">
+          View my work <i class="mdi mdi-arrow-right"></i>
+        </div>
+
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" dest="home">home</div>
+            <div class="page-link" dest="about">about</div>
+            <div class="page-link" dest="portfolio">portfolio</div>
+            <div class="page-link" dest="contact">contact</div>
+          </div>
+          <i class="mdi mdi-menu"></i>
+        </nav>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">
+          ABOUT
+        </div>
+
+
+        <div class="flex row label-wrap">
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                <div class="hexagon">
+                  <i class="mdi mdi-check-all"></i>
+                </div>
               </div>
-              <i class="mdi mdi-chevron-left" id="prev"></i>
-              <i class="mdi mdi-chevron-right" id="next"></i>
+              <div class="waypoint" data-animation="fade-in">
+                <div class="label bold">Responsibility</div>
+                <div>
+                  Always trying to performing duties in the best possible manner.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                <div class="hexagon">
+                  <i class="mdi mdi-library"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="label bold">Self-Taugh</div>
+                <div>Took the initiative to learn a new skill by myself, studying resources and practicing
+                  independently.</div>
+              </div>
             </div>
           </div>
-          <div class="info-box">
-            <div class="title"></div>
-            <div class="tag"></div>
-            <div class="detail"></div>
-            <a href="#" target="_blank"
-              ><div class="button">
-                <i class="mdi mdi-open-in-new"></i>VIEW SITE
-              </div></a
-            >
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                <div class="hexagon">
+                  <i class="mdi mdi-dumbbell"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                <div class="label bold">Hard-Working</div>
+                <div>100% dedicated to doing my job well and punctual.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                <div class="hexagon">
+                  <i class="mdi mdi-lightbulb-outline"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                <div class="label bold">Pro-Active</div>
+                <div>
+                  Always thinking about the future, planning and preparing for what lies ahead.
+                </div>
+              </div>
+            </div>
           </div>
-          <i class="close mdi mdi-close"></i>
+        </div>
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me.jpg" class="me" />
+            <div class="label bold">Who's this guy?</div>
+            <div>
+              I'm a Full-Stack Developer for
+              <a class="highlight" href="http://www.endava.com" target="_blank">Endava</a>
+              in Funes, Argentina.
+              <br />
+              I have serious passion for software development, always looking for new knowledge, skills and tools that
+              improves my productivity in my work as in my personal career.
+              <br />
+              <span class="page-link highlight" dest="contact">Let's make something special.</span>
+            </div>
+          </div>
+
+          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:85%">
+                <div class="tag bold flex">.NET</div>
+              </div>
+              <span>85%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Angular</div>
+              </div>
+              <span>75%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Ionic</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">SQL Server</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:55%">
+                <div class="tag bold flex">Python</div>
+              </div>
+              <span>55%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">GIT</div>
+              </div>
+              <span>75%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Azure DevOps</div>
+              </div>
+              <span>75%</span>
+            </div>
+
+
+          </div>
         </div>
       </div>
+    </section>
 
-      <section id="home" class="flex height-fix">
-        <div id="pt" class="canvas"></div>
-        <div class="flex">
-          <div class="text">
-            Hello, I'm <span class="highlight">Paulo Mendez</span>.
-            <br />
-            I'm a full-stack web developer.
-          </div>
+    <section class="flex" id="portfolio">
+      <div class="header waypoint" data-animation="slide-in-right">
+        PROJECTS
+      </div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
 
-          <div class="button page-link" dest="about">
-            View my work <i class="mdi mdi-arrow-right"></i>
-          </div>
-
-          <nav class="flex">
-            <div class="link-wrap">
-              <div class="active page-link" dest="home">home</div>
-              <div class="page-link" dest="about">about</div>
-              <div class="page-link" dest="portfolio">portfolio</div>
-              <div class="page-link" dest="contact">contact</div>
-            </div>
-            <i class="mdi mdi-menu"></i>
-          </nav>
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".angular">.NET/ANGULAR</div>
+          <div class="filter" data-filter=".ionic">.NET/IONIC</div>
+          <div class="filter" data-filter=".wf">.NET WF/BLAZOR</div>
+          <div class="filter" data-filter=".plain">PLAIN HTML, CSS & JS</div>
         </div>
-      </section>
-
-      <section id="about">
-        <div class="container flex">
-          <div class="header waypoint" data-animation="slide-in-left">
-            ABOUT
-          </div>
-
-
-          <div class="flex row label-wrap">
-            <div class="flex row-gt-sm">
-              <div class="flex bullet-wrap ">
-                <div class="hex-wrap waypoint" data-animation="flip-in-x">
-                  <div class="hexagon">
-                    <i class="mdi mdi-check-all"></i>
-                  </div>
-                </div>
-                <div class="waypoint" data-animation="fade-in">
-                  <div class="label bold">Responsibility</div>
-                  <div>
-                    Always trying to performing duties in the best possible manner.
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex bullet-wrap ">
-                <div
-                  class="hex-wrap waypoint"
-                  data-animation="flip-in-x"
-                  data-delay=".2s"
-                >
-                  <div class="hexagon">
-                    <i class="mdi mdi-library"></i>
-                  </div>
-                </div>
-                <div class="waypoint" data-animation="fade-in" data-delay=".2s">
-                  <div class="label bold">Self-Taugh</div>
-                  <div>Took the initiative to learn a new skill by myself, studying resources and practicing independently.</div>
-                </div>
-              </div>
-            </div>
-            <div class="flex row-gt-sm">
-              <div class="flex bullet-wrap ">
-                <div
-                  class="hex-wrap waypoint"
-                  data-animation="flip-in-x"
-                  data-delay=".4s"
-                >
-                  <div class="hexagon">
-                    <i class="mdi mdi-dumbbell"></i>
-                  </div>
-                </div>
-                <div class="waypoint" data-animation="fade-in" data-delay=".4s">
-                  <div class="label bold">Hard-Working</div>
-                  <div>100% dedicated to doing my job well and punctual.</div>
-                </div>
-              </div>
-
-              <div class="flex bullet-wrap ">
-                <div
-                  class="hex-wrap waypoint"
-                  data-animation="flip-in-x"
-                  data-delay=".6s"
-                >
-                  <div class="hexagon">
-                    <i class="mdi mdi-lightbulb-outline"></i>
-                  </div>
-                </div>
-                <div class="waypoint" data-animation="fade-in" data-delay=".6s">
-                  <div class="label bold">Pro-Active</div>
-                  <div>
-                    Always thinking about the future, planning and preparing for what lies ahead.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-wrapper flex row-gt-sm">
-            <div
-              class="flex flex-50-gt-sm waypoint"
-              data-animation="slide-in-left"
-            >
-              <img src="img/me.jpg" class="me" />
-              <div class="label bold">Who's this guy?</div>
-              <div>
-                I'm a Full-Stack Developer for
-                <a
-                  class="highlight"
-                  href="http://www.endava.com"
-                  target="_blank"
-                  >Endava</a
-                >
-                in Funes, Argentina.
-                <br />
-                I have serious passion for software development,  always looking for new knowledge, skills and tools that improves my productivity in my work as in my personal career.
-                <br />
-                <span class="page-link highlight" dest="contact"
-                  >Let's make something special.</span
-                >
-              </div>
-            </div>
-
-            <div
-              class="flex flex-50-gt-sm waypoint bars-wrap"
-              data-animation="slide-in-right"
-            >
-              <div class="bar flex">
-                <div class="bar fill" style="width:85%">
-                  <div class="tag bold flex">.NET</div>
-                </div>
-                <span>85%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:75%">
-                  <div class="tag bold flex">Angular</div>
-                </div>
-                <span>75%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:60%">
-                  <div class="tag bold flex">Ionic</div>
-                </div>
-                <span>60%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:70%">
-                  <div class="tag bold flex">SQL Server</div>
-                </div>
-                <span>70%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:70%">
-                  <div class="tag bold flex">HTML</div>
-                </div>
-                <span>70%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:60%">
-                  <div class="tag bold flex">CSS</div>
-                </div>
-                <span>60%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:55%">
-                  <div class="tag bold flex">Python</div>
-                </div>
-                <span>55%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:75%">
-                  <div class="tag bold flex">GIT</div>
-                </div>
-                <span>75%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:75%">
-                  <div class="tag bold flex">Azure DevOps</div>
-                </div>
-                <span>75%</span>
-              </div>
-
-      
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="flex" id="portfolio">
-        <div class="header waypoint" data-animation="slide-in-right">
-          PROJECTS
-        </div>
-        <div
-          class="header-bar waypoint"
-          data-animation="slide-in-right"
-          data-delay=".3s"
-        ></div>
-
-        <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="float-bar">
           <div class="flex row">
             <div class="filter" data-filter="all">ALL</div>
             <div class="filter" data-filter=".angular">.NET/ANGULAR</div>
@@ -273,160 +247,166 @@
             <div class="filter" data-filter=".wf">.NET WF/BLAZOR</div>
             <div class="filter" data-filter=".plain">PLAIN HTML, CSS & JS</div>
           </div>
-          <div class="float-bar">
-            <div class="flex row">
-              <div class="filter" data-filter="all">ALL</div>
-              <div class="filter" data-filter=".angular">.NET/ANGULAR</div>
-              <div class="filter" data-filter=".ionic">.NET/IONIC</div>
-              <div class="filter" data-filter=".wf">.NET WF/BLAZOR</div>
-              <div class="filter" data-filter=".plain">PLAIN HTML, CSS & JS</div>
+        </div>
+      </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+
+        <div class="mix angular" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Ticket Management App</div>
+              <span class="highlight">.NET 6 / Angular 15</span>
             </div>
+            <div class="button" id="ticket">LEARN MORE</div>
           </div>
         </div>
 
-        <div id="gallery" class="container flex row wrap waypoint">
-
-          <div class="mix plain" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">Netflix Clone Page</div>
-                <span class="highlight">Plain HTML, CSS & JS</span>
-              </div>
-              <div class="button" id="netflix">LEARN MORE</div>
+        <div class="mix plain" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Netflix Clone Page</div>
+              <span class="highlight">Plain HTML, CSS & JS</span>
             </div>
-          </div>
-
-          <div class="mix angular" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">MySocialNetwork v2
-                </div>
-                <span class="highlight">.NET 5 / Angular 12</span>
-              </div>
-              <div class="button" id="socialnetwork">LEARN MORE</div>
-            </div>
-          </div>
-
-          <div class="mix ionic" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">ProAgenda
-                </div>
-                <span class="highlight">.NET 5 / Ionic 4</span>
-              </div>
-              <div class="button" id="agenda">LEARN MORE</div>
-            </div>
-          </div>
-
-          <div class="mix angular" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">MyMovies</div>
-                <span class="highlight">.NET 5 / Angular 12</span>
-              </div>
-              <div class="button" id="movies">LEARN MORE</div>
-            </div>
-          </div>
-
-          <div class="mix angular" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">World Cities & Countries</div>
-                <span class="highlight">.NET 5 / Angular 12</span>
-              </div>
-              <div class="button" id="cities">LEARN MORE</div>
-            </div>
-          </div>
-
-
-          <div class="mix wf" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">School Management System</div>
-                <span class="highlight">.NET Windows Form</span>
-              </div>
-              <div class="button" id="school">LEARN MORE</div>
-            </div>
-          </div>
-
-          <div class="mix wf" data-my-order="1">
-            <div>
-              <div class="card"></div>
-              <div class="text">
-                <div class="bold">E-Commerce</div>
-                <span class="highlight">ASP.NET 3.0 / Blazor</span>
-              </div>
-              <div class="button" id="ecommerce">LEARN MORE</div>
-            </div>
-          </div>
-
-      </section>
-
-       
-
-      <footer id="contact">
-        <div class="header waypoint" data-animation="slide-in-right" style="color: white;">
-          CONTACT
-        </div>
-        <br>
-        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
-
-        <div class="icon-wrap flex row">
-          <a href="https://www.linkedin.com/in/paulo-mendez/">
-            <div class="flex icon" id="icon-2">
-              <i class="mdi mdi-linkedin"></i>
-            </div>
-          </a>
-          <a href="https://github.com/paulomendez1">
-            <div class="flex icon" id="icon-3">
-              <i class="mdi mdi-github-box"></i>
-            </div>
-          </a>
-        </div>
-        <div class="info-box">
-          <div class="footnote">
-            PAULO MENDEZ <span class="highlight">&copy;2022</span>
+            <div class="button" id="netflix">LEARN MORE</div>
           </div>
         </div>
-      </footer>
-    </div>
 
-    <div id="preload">
-      <img src="img/me.jpg" />
-      <img src="img/filler.png" />
-      <img src="img/project-1.jpg" />
-      <img src="img/project-2.jpg" />
-      <img src="img/project-3.jpg" />
-      <img src="img/project-4.jpg" />
-      <img src="img/project-5.png" />
-      <img src="img/project-6.jpg" />
-      <img src="img/project-7.jpg" />
-      <img src="img/slides/movies-0.jpg" />
-      <img src="img/slides/movies-1.jpg" />
-      <img src="img/slides/movies-2.jpg" />
-      <img src="img/slides/socialnetwork-0.jpg" />
-      <img src="img/slides/socialnetwork-1.jpg" />
-      <img src="img/slides/socialnetwork-2.jpg" />
-      <img src="img/slides/cities-0.jpg" />
-      <img src="img/slides/cities-1.jpg" />
-      <img src="img/slides/cities-2.jpg" />
-      <img src="img/slides/ecommerce-0.jpg" />
-      <img src="img/slides/ecommerce-1.jpg" />
-      <img src="img/slides/ecommerce-2.jpg" />
-      <img src="img/slides/school-0.jpg" />
-      <img src="img/slides/school-1.jpg" />
-      <img src="img/slides/school-2.jpg" />
-      <img src="img/slides/netflix-1.jpg" />
-      <img src="img/slides/netflix-2.jpg" />
-      <img src="img/slides/netflix-3.jpg" />
-    </div>
-  </body>
+        <div class="mix angular" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">MySocialNetwork v2
+              </div>
+              <span class="highlight">.NET 5 / Angular 12</span>
+            </div>
+            <div class="button" id="socialnetwork">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix ionic" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">ProAgenda
+              </div>
+              <span class="highlight">.NET 5 / Ionic 4</span>
+            </div>
+            <div class="button" id="agenda">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix angular" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">MyMovies</div>
+              <span class="highlight">.NET 5 / Angular 12</span>
+            </div>
+            <div class="button" id="movies">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix angular" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">World Cities & Countries</div>
+              <span class="highlight">.NET 5 / Angular 12</span>
+            </div>
+            <div class="button" id="cities">LEARN MORE</div>
+          </div>
+        </div>
+
+
+        <div class="mix wf" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">School Management System</div>
+              <span class="highlight">.NET Windows Form</span>
+            </div>
+            <div class="button" id="school">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix wf" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">E-Commerce</div>
+              <span class="highlight">ASP.NET 3.0 / Blazor</span>
+            </div>
+            <div class="button" id="ecommerce">LEARN MORE</div>
+          </div>
+        </div>
+
+    </section>
+
+
+
+    <footer id="contact">
+      <div class="header waypoint" data-animation="slide-in-right" style="color: white;">
+        CONTACT
+      </div>
+      <br>
+      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+      <div class="icon-wrap flex row">
+        <a href="https://www.linkedin.com/in/paulo-mendez/">
+          <div class="flex icon" id="icon-2">
+            <i class="mdi mdi-linkedin"></i>
+          </div>
+        </a>
+        <a href="https://github.com/paulomendez1">
+          <div class="flex icon" id="icon-3">
+            <i class="mdi mdi-github-box"></i>
+          </div>
+        </a>
+      </div>
+      <div class="info-box">
+        <div class="footnote">
+          PAULO MENDEZ <span class="highlight">&copy;2022</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="preload">
+    <img src="img/me.jpg" />
+    <img src="img/filler.png" />
+    <img src="img/project-1.jpg" />
+    <img src="img/project-2.jpg" />
+    <img src="img/project-3.jpg" />
+    <img src="img/project-4.jpg" />
+    <img src="img/project-5.png" />
+    <img src="img/project-6.jpg" />
+    <img src="img/project-7.jpg" />
+    <img src="img/slides/movies-0.jpg" />
+    <img src="img/slides/movies-1.jpg" />
+    <img src="img/slides/movies-2.jpg" />
+    <img src="img/slides/socialnetwork-0.jpg" />
+    <img src="img/slides/socialnetwork-1.jpg" />
+    <img src="img/slides/socialnetwork-2.jpg" />
+    <img src="img/slides/cities-0.jpg" />
+    <img src="img/slides/cities-1.jpg" />
+    <img src="img/slides/cities-2.jpg" />
+    <img src="img/slides/ecommerce-0.jpg" />
+    <img src="img/slides/ecommerce-1.jpg" />
+    <img src="img/slides/ecommerce-2.jpg" />
+    <img src="img/slides/school-0.jpg" />
+    <img src="img/slides/school-1.jpg" />
+    <img src="img/slides/school-2.jpg" />
+    <img src="img/slides/netflix-1.jpg" />
+    <img src="img/slides/netflix-2.jpg" />
+    <img src="img/slides/netflix-3.jpg" />
+    <img src="img/slides/ticket-1.jpg" />
+    <img src="img/slides/ticket-2.jpg" />
+  </div>
+</body>
+
 </html>
 
 <script src="scripts/canvas.js"></script>
